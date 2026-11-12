@@ -1,0 +1,21 @@
+{
+  "name": "api-ejemplo",
+  "version": "1.0.0",
+  "description": "API de ejemplo con Node.js y Express",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.22.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

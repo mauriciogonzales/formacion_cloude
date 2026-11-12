@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      }
+    },
+    "slack": {
+      "type": "stdio",
+      "command": "${NPX_CMD:-C:/Users/mrgonzales/AppData/Roaming/fnm/aliases/default/npx.cmd}",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-slack"
+      ],
+      "env": {
+        "PATH": "C:/Users/mrgonzales/AppData/Roaming/fnm/aliases/default;${PATH}",
+        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}",
+        "SLACK_TEAM_ID": "${SLACK_TEAM_ID}"
+      }
+    }
+  }
+}
